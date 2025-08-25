@@ -38,6 +38,7 @@ To be done ...
 
 - [@rverchere](https://github.com/rverchere)
 - [@fredleger](https://github.com/fredleger)
+- [@neilime](https://github.com/neilime)
 
 ## Contributing
 
