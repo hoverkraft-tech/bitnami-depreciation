@@ -1,0 +1,3 @@
+# https://github.com/bitnami/charts/blob/main/bitnami/thanos/values.yaml#L71
+image:
+  repository: bitnamilegacy/thanos

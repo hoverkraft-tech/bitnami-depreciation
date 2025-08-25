@@ -7,7 +7,10 @@ more infos: https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure
 
 - [bitnami/redis](./helm/bitnami-redis)
 - [bitnami/rabbitmq](./helm/bitnami-rabbitmq)
-
+- [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
+- [bitnami/thanos](./helm/bitnami-thanos)
+- [vmware-tanzu/velero](./helm/vmware-tanzu-velero)
+- [kyverno/kyverno](./helm/kyverno-kyverno)
 
 ## Contributing
 
