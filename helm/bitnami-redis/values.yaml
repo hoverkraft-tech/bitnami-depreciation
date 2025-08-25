@@ -1,0 +1,14 @@
+image:
+  repository: bitnamilegacy/redis
+metrics:
+  image:
+    repository: bitnamilegacy/redis-exporter
+sentinel:
+  image:
+    repository: bitnamilegacy/redis-sentinel
+sysctl:
+  image:
+    repository: bitnamilegacy/os-shell
+volumePermissions:
+  image:
+    repository: bitnamilegacy/os-shell
