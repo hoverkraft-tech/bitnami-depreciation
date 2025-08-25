@@ -12,6 +12,11 @@ more infos: https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure
 - [vmware-tanzu/velero](./helm/vmware-tanzu-velero)
 - [kyverno/kyverno](./helm/kyverno-kyverno)
 
+## Contributors
+
+- [@rverchere](https://github.com/rverchere)
+- [@fredleger](https://github.com/fredleger)
+
 ## Contributing
 
-Please fee free to ope PRs to add yours if you find this usefull
+Please fee free to open PRs to add yours if you find this usefull
