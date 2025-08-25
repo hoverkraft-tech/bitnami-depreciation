@@ -3,6 +3,8 @@
 The idea of this repo is to reference all helm charts/tools that need attention to be ready for the changes of the 2025-08-28
 more infos: https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure-images-for-production-ready-containerized-applications
 
+https://www.tickcounter.com/countdown/7975295/bitnami-depreciation
+
 ## How to detect if you need it
 
 You can use a command like this that will leverage kubectl plugin [custom-cols](https://github.com/webofmars/kubectl-custom-cols)
