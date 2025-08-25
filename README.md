@@ -18,6 +18,7 @@ If you are seeing images that start with 'bitnami/', it's time to patch !
 - [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
 - [bitnami/mysql](./helm/bitnami-mysql)
 - [bitnami/phpmyadmin](./helm/bitnami/phpmyadmin)
+- [bitnami/postgresql](./helm/bitnami/postgresql)
 - [bitnami/rabbitmq](./helm/bitnami-rabbitmq)
 - [bitnami/redis](./helm/bitnami-redis)
 - [bitnami/thanos](./helm/bitnami-thanos)
