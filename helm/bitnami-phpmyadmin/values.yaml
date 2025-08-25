@@ -1,0 +1,5 @@
+image:
+  repository: bitnami/phpmyadmin
+metrics:
+  image:
+    repository: bitnami/phpmyadmin
