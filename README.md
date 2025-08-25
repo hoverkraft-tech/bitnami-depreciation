@@ -29,10 +29,8 @@ If you are seeing images that start with 'bitnami/', it's time to patch !
 
 ## Other ways
 
-It might be possible to use mutating webhook to patch live any containers starting by 'docker.io/bitnami'.
-Like this kyverno rule : https://kyverno.io/policies/other/replace-image-registry/replace-image-registry/
-
-To be done ...
+Another approach is to use mutating webhook to patch live any containers starting by '(*/)bitnami/'.
+This is implemented [here](./workarounds/kyverno/).
 
 ## Contributors
 
@@ -40,6 +38,6 @@ To be done ...
 - [@fredleger](https://github.com/fredleger)
 - [@neilime](https://github.com/neilime)
 
-## Contributing
+## Contributingv
 
 Please fee free to open PRs to add yours if you find this usefull

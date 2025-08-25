@@ -1,0 +1,9 @@
+# https://github.com/kyverno/kyverno/pull/13716
+# https://github.com/kyverno/kyverno/blob/main/charts/kyverno/values.yaml#L544
+webhooksCleanup:
+  image:
+    repository: "bitnamilegacy/kubectl"
+
+policyReportsCleanup:
+  image:
+    repository: "bitnamilegacy/kubectl"

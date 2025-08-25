@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-bitnami-edge-case-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: test-bitnami-edge-case-1
+  template:
+    metadata:
+      name: bitnami-image-edge-case
+      labels:
+        app: test-bitnami-edge-case-1
+    spec:
+      containers:
+      - name: test
+        image: notbitnami/nginx

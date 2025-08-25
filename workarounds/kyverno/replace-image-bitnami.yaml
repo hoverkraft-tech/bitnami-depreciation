@@ -1,0 +1,57 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: replace-image-bitnami-legacy
+  annotations:
+    policies.kyverno.io/title: Replace Bitnami Image by legacy ones
+    pod-policies.kyverno.io/autogen-controllers: none
+    policies.kyverno.io/category: Sample
+    policies.kyverno.io/severity: medium
+    policies.kyverno.io/subject: Pod
+    kyverno.io/kyverno-version: 1.7.2
+    policies.kyverno.io/minversion: 1.6.0
+    kyverno.io/kubernetes-version: "1.23"
+    policies.kyverno.io/description: >-
+      This policy replaces Bitnami images with their legacy equivalents
+      to work around Docker Hub rate limiting and deprecation issues.
+      It mutates all images that contain 'bitnami/' in their path to use
+      'bitnamilegacy/' instead. For example, 'bitnami/postgresql:15' becomes
+      'bitnamilegacy/postgresql:15'. This applies to both regular containers
+      and init containers in Pods. Note that this mutates Pods directly
+      and not their controllers.
+spec:
+  background: false
+  rules:
+    - name: replace-image-bitnami-pod-containers
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      mutate:
+        foreach:
+        - list: "request.object.spec.containers"
+          patchStrategicMerge:
+            spec:
+              containers:
+              - name: "{{ element.name }}"
+                image: "{{ regex_replace_all('(^|/)bitnami/', '{{element.image}}', '${1}bitnamilegacy/' )}}"
+    - name: replace-image-bitnami-pod-initcontainers
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      preconditions:
+        all:
+        - key: "{{ request.object.spec.initContainers[] || `[]` | length(@) }}"
+          operator: GreaterThanOrEquals
+          value: 1
+      mutate:
+        foreach:
+        - list: "request.object.spec.initContainers"
+          patchStrategicMerge:
+            spec:
+              initContainers:
+              - name: "{{ element.name }}"
+                image: "{{ regex_replace_all('(^|/)bitnami/', '{{element.image}}', '${1}bitnamilegacy/' )}}"

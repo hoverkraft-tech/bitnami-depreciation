@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: other
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: other
+  template:
+    metadata:
+      name: bitnami-image
+      labels:
+        app: other
+    spec:
+      containers:
+      - name: test
+        image: nginx
