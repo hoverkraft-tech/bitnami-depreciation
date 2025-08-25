@@ -5,12 +5,13 @@ more infos: https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure
 
 ## Helm charts
 
-- [bitnami/redis](./helm/bitnami-redis)
-- [bitnami/rabbitmq](./helm/bitnami-rabbitmq)
 - [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
+- [bitnami/phpmyadmin](./helm/bitnami/phpmyadmin)
+- [bitnami/rabbitmq](./helm/bitnami-rabbitmq)
+- [bitnami/redis](./helm/bitnami-redis)
 - [bitnami/thanos](./helm/bitnami-thanos)
-- [vmware-tanzu/velero](./helm/vmware-tanzu-velero)
 - [kyverno/kyverno](./helm/kyverno-kyverno)
+- [vmware-tanzu/velero](./helm/vmware-tanzu-velero)
 
 ## Contributors
 
