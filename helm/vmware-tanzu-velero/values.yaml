@@ -1,4 +1,4 @@
 # https://github.com/vmware-tanzu/helm-charts/blob/main/charts/velero/values.yaml#L333
 kubectl:
   image:
-    repository: docker.io/bitnamilegacy/kubectl
+    repository: registry.k8s.io/kubectl
