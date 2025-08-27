@@ -5,6 +5,13 @@ more infos: https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure
 
 https://www.tickcounter.com/countdown/7975295/bitnami-depreciation
 
+NOTE: bitnami has postponed a bit the depreciation (to the 2025-09-29):
+> After evaluating the impact and community feedback, the Bitnami team has postponed the deletion of the Bitnami public catalog (docker.io/bitnami) until September 29th to give users more time to adapt to the upcoming changes.
+
+But htey will start too remove some images randomly for 24h each.
+Check https://github.com/bitnami/charts/issues/35164 for more details
+
+
 ## How to detect if you need it
 
 You can use a command like this that will leverage kubectl plugin [custom-cols](https://github.com/webofmars/kubectl-custom-cols)
