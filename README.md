@@ -17,8 +17,10 @@ If you are seeing images that start with 'bitnami/', it's time to patch !
 
 ## Helm charts
 
-- [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
+- [bitnami/apisix](./helm/bitnami-apisix)
+- [bitnami/etcd](./helm/bitnami-etcd)
 - [bitnami/mysql](./helm/bitnami-mysql)
+- [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
 - [bitnami/phpmyadmin](./helm/bitnami-phpmyadmin)
 - [bitnami/postgresql](./helm/bitnami-postgresql)
 - [bitnami/rabbitmq](./helm/bitnami-rabbitmq)

@@ -6,3 +6,5 @@ explicit_start = false
 sequence_style = "block_style"
 none_representation = "~"
 comments_min_spaces_from_content = 1
+whitelines=1
+section_whitelines=1

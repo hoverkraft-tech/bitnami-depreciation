@@ -1,0 +1,20 @@
+global:
+  security:
+    # NOTE: this may be needed depending the version of the chart
+    allowInsecureImages: true
+
+image:
+  repository: bitnamilegacy/apisix
+
+ingressController:
+  image:
+    repository: bitnamilegacy/apisix-ingress-controller
+
+waitContainer:
+  image:
+    repository: bitnamilegacy/os-shell
+
+# NOTE: this is usefull if your chart version is < 6.0.0
+# dashboard:
+#   image:
+#     repository: bitnamilegacy/apisix-dashboard

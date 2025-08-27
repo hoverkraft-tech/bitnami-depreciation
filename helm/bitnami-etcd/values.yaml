@@ -1,0 +1,6 @@
+image:
+  repository: bitnamilegacy/etcd
+
+volumePermissions:
+  image:
+    repository: bitnamilegacy/os-shell
