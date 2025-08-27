@@ -14,5 +14,5 @@ spec:
         app: test-bitnami-legacy
     spec:
       containers:
-      - name: test
-        image: bitnami/nginx
+        - name: test
+          image: bitnami/nginx

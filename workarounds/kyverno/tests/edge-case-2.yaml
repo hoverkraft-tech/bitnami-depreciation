@@ -14,5 +14,5 @@ spec:
         app: test-bitnami-edge-case-2
     spec:
       containers:
-      - name: test
-        image: docker.io/bitnami/nginx
+        - name: test
+          image: docker.io/bitnami/nginx

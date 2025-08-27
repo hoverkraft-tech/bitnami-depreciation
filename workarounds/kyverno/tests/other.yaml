@@ -14,5 +14,5 @@ spec:
         app: other
     spec:
       containers:
-      - name: test
-        image: nginx
+        - name: test
+          image: nginx
