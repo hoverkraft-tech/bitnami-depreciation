@@ -2,7 +2,8 @@
 # https://github.com/kyverno/kyverno/blob/main/charts/kyverno/values.yaml#L544
 webhooksCleanup:
   image:
-    repository: registry.k8s.io/kubectl
+    repository: bitnamilegacy/kubectl
+
 policyReportsCleanup:
   image:
-    repository: registry.k8s.io/kubectl
+    repository: bitnamilegacy/kubectl
