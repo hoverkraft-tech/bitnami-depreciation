@@ -33,6 +33,7 @@ If you are seeing images that start with 'bitnami/', it's time to patch !
 - [bitnami/rabbitmq](./helm/bitnami-rabbitmq)
 - [bitnami/redis](./helm/bitnami-redis)
 - [bitnami/thanos](./helm/bitnami-thanos)
+- [bitnami/valkey](./helm/bitnami-valkey)
 - [kyverno/kyverno](./helm/kyverno-kyverno)
 - [vmware-tanzu/velero](./helm/vmware-tanzu-velero)
 

@@ -1,0 +1,27 @@
+global:
+  security:
+    # NOTE: this may be needed depending the version of the chart
+    allowInsecureImages: true
+
+image:
+  repository: bitnamilegacy/valkey
+
+kubectl:
+  image:
+    repository: bitnamilegacy/kubectl
+
+metrics:
+  image:
+    repository: bitnamilegacy/valkey-exporter
+
+sentinel:
+  image:
+    repository: bitnamilegacy/valkey-sentinel
+
+sysctl:
+  image:
+    repository: bitnamilegacy/os-shell
+
+volumePermissions:
+  image:
+    repository: bitnamilegacy/os-shell
