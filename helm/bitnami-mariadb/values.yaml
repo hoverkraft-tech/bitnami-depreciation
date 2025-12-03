@@ -1,0 +1,8 @@
+image:
+  repository: bitnamilegacy/mariadb
+metrics:
+  image:
+    repository: bitnamilegacy/mysqld-exporter
+volumePermissions:
+  image:
+    repository: bitnamilegacy/os-shell

@@ -26,6 +26,7 @@ If you are seeing images that start with 'bitnami/', it's time to patch !
 
 - [bitnami/apisix](./helm/bitnami-apisix)
 - [bitnami/etcd](./helm/bitnami-etcd)
+- [bitnami/mariadb](./helm/bitnami-mariadb)
 - [bitnami/mysql](./helm/bitnami-mysql)
 - [bitnami/oauth2-proxy](./helm/bitnami-oauth2-proxy)
 - [bitnami/phpmyadmin](./helm/bitnami-phpmyadmin)
